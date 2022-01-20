@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title ARCODE
+        link(rel="stylesheet" href="https://unpkg.com/mvp.css")
+        script(src="/public/js/app.js")
+    body 
+        header 
+            h1 ARCODE Generator
+        main
+            h2 welcome to ARCODE Generator
+            img(id="ARCode", src="/public/img/white.jpg", alt="HI",  width="300px", hight="300px", srcset="")
+            form 
+                input(type="text", name="id", value="아이디")
+                input(type="text", name="pw", value="패스워드")
+                input(type="reset", value="재입력")
+            <br>
+            input(type="button", id="btn_generate", value="Generate", onclick="getQRCode()")

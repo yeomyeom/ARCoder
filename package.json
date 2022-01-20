@@ -1,0 +1,27 @@
+{
+  "name": "arcoder",
+  "version": "1.0.0",
+  "description": "AREX QRCode",
+  "keywords": [],
+  "author": "YSY",
+  "license": "ISC",
+  "homepage": "https://github.com/yeomyeom/ARCoder#readme",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.10",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.10",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "express-sessions": "^1.0.6",
+    "nodemon": "^2.0.15",
+    "qrcode": "^1.5.0",
+    "speakeasy": "^2.0.0"
+  },
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}
