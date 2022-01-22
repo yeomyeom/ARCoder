@@ -8,13 +8,17 @@ html(lang="en")
         link(rel="stylesheet" href="https://unpkg.com/mvp.css")
         script(src="/public/js/app.js")
     body 
-        header 
+        head 
             h1 ARCODE Generator
         main
             h2 welcome to ARCODE Generator
-            img(id="ARCode", src="/public/img/white.jpg", alt="HI",  width="300px", hight="300px", srcset="")
-            form 
-                input(type="text", id="id", name="id", value="아이디", onfocus="this.select()")
-                input(type="text", id="pw", name="pw", value="패스워드", onfocus="this.select()")
-                input(type="reset", value="재입력")
+            table(border="none")
+                th
+                    img(id="ARCode", src="/public/img/white.jpg", alt="HI",  width="300px", hight="300px", srcset="")
+                th
+                    form 
+                        input(type="text", id="id", name="id", value="아이디", onfocus="this.select()", style="text-transform:uppercase")
+                        input(type="password", id="pw", name="pw", value="패스워드", onfocus="this.select()")
+                        input(type="reset", value="재입력", height="40")
+            br
             Button(id="btn_generate", onclick="getQRCode()") Generate

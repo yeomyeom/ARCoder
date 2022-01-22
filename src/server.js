@@ -36,7 +36,7 @@ app.post("/qr", (req, res) => {
     });
 });
 
-const handleListen = () => console.log(`Listening on http://localhost:7685`);
+const handleListen = () => console.log(`Listening on http://localhost:7685 or http://192.168.0.6:7685`);
 
 const server = http.createServer(app);//http 서버 생성
 
